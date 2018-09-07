@@ -4,14 +4,21 @@ using std::string;
 
 class Character
 {
-public:
+private:
 
+
+public:
 	int health;
 	int minDamage;
 	int maxDamage;
 	string name;
 	string attackName;
+	
+	// print character's info to the console
+	void printCharacterInfo();
+
 
 };
 
 void textcolor(int color);
+
