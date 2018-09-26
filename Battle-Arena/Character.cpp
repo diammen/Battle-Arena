@@ -20,6 +20,13 @@ void textcolor(int color)
 void Character::printCharacterInfo()
 {
 	cout << name << endl;
-	cout << "Health: " << health << endl;
+	cout << "Health: " << health << "/" << maxHealth << endl;
 	cout << "Attack: " << minDamage << "-" << maxDamage << endl;
+}
+
+void Character::takeDamage(int damage)
+{
+	health -= damage;
+	if (health < 0)
+		health = 0;
 }
